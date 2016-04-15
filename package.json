@@ -1,7 +1,7 @@
 {
   "name": "logs-to-sumologic",
   "description": "A simple sumologic log client tool",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "author": "Richard Seldon<arcseldon@gmail.com>",
   "repository": {
     "type": "git",
