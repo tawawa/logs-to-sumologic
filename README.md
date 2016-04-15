@@ -26,10 +26,6 @@ var collectorCode = 'YOUR_COLLECTOR CODE'
 var endpoint = 'YOUR_ENDPOINT'
 // 'https://endpoint1.collection.us2.sumologic.com/receiver/v1/http/'
 
-var opts = {
-  endpoint: endpoint
-};
-
 var url = endpoint + collectorCode;
 
 const sumologic = Sumologic.createClient({
