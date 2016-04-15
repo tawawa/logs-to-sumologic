@@ -6,6 +6,15 @@ A client implementation for Sumologic in node.js.
 
 Very simple.
 
+First of all, set up an account with [Sumologic](https://service.us2.sumologic.com)
+
+Create an HTTP Collector endpoint
+
+eg.
+
+![alt tag](img/Sumo_Logic1.jpg)
+
+
 ```js
 
 const Sumologic = require('logs-to-sumologic');
@@ -48,3 +57,9 @@ sumologic.log(JSON.stringify(logs), cb);
 sumologic.log(logs, cb);
 
 ```
+
+Setup a live tail to your HTTP Collector endpoint
+
+You should see your logs appearing, eg.
+
+![alt tag](img/Sumo_Logic2.jpg)
