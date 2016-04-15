@@ -1,0 +1,23 @@
+{
+  "name": "logs-to-sumologic",
+  "description": "A simple sumologic log client tool",
+  "version": "1.1.0",
+  "author": "Richard Seldon<arcseldon@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tawawa/logs-to-sumologic.git"
+  },
+  "keywords": [
+    "logging",
+    "sumologic"
+  ],
+  "dependencies": {
+    "request": "2.67.x",
+    "json-stringify-safe": "5.0.x"
+  },
+  "main": "./lib/sumologic",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.8.0"
+  }
+}
