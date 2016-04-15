@@ -15,6 +15,8 @@ eg.
 ![alt tag](img/Sumo_Logic1.jpg)
 
 
+Now write a few lines of code to call logs-to-sumologic:
+
 ```js
 
 const Sumologic = require('logs-to-sumologic');
@@ -58,8 +60,11 @@ sumologic.log(logs, cb);
 
 ```
 
-Setup a live tail to your HTTP Collector endpoint
+Optionally, setup a live tail to your HTTP Collector endpoint
 
 You should see your logs appearing, eg.
 
 ![alt tag](img/Sumo_Logic2.jpg)
+
+
+Done.
