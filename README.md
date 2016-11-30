@@ -29,8 +29,16 @@ var endpoint = 'YOUR_ENDPOINT'
 var url = endpoint + collectorCode;
 
 const sumologic = Sumologic.createClient({
-  url: url
+  url: url,
+  name: "SumoHttpCollector",   // optional
+  host: "webapp.dot.com",      // optional
+  category: "env/host/service" // optional
 });
+/**
+ * More info about name,host and category options are in section 
+ *  "Other Supported HTTP Headers"
+ *  at https://help.sumologic.com/Send_Data/Sources/02Sources_for_Hosted_Collectors/HTTP_Source/Upload_Data_to_an_HTTP_Source
+*/
 
 var cb = function (err, res) {
   if (err) {
