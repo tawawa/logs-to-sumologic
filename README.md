@@ -4,9 +4,7 @@ A client implementation for Sumologic in node.js.
 
 ## Usage
 
-Very simple.
-
-First of all, set up an account with [Sumologic](https://service.us2.sumologic.com)
+Very simple to use. First of all, set up an account with [Sumologic](https://service.us2.sumologic.com)
 
 Create an HTTP Collector endpoint
 
@@ -30,10 +28,11 @@ var url = endpoint + collectorCode;
 
 const sumologic = Sumologic.createClient({
   url: url,
-  name: "SumoHttpCollector",   // optional
-  host: "webapp.dot.com",      // optional
-  category: "env/host/service" // optional
+  name: "SumoHttpCollector",   // Custom Source Name -  optional
+  host: "webapp.com",      // Custom Source Host - optional
+  category: "env/host/service" // Custom Source Category - optional
 });
+
 /**
  * More info about name,host and category options are in section 
  *  "Other Supported HTTP Headers"
@@ -72,3 +71,8 @@ You should see your logs appearing, eg.
 
 
 Done.
+
+
+## Further information
+
+Please see [here](https://help.sumologic.com/Send_Data/Sources/02Sources_for_Hosted_Collectors/HTTP_Source/Upload_Data_to_an_HTTP_Source) for further information on uploading data to an HTTP Source using Sumologic.
