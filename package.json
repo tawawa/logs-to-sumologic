@@ -12,7 +12,7 @@
     "sumologic"
   ],
   "dependencies": {
-    "request": "2.67.x",
+    "request": "2.88.0",
     "json-stringify-safe": "5.0.x"
   },
   "main": "./lib/sumologic",
